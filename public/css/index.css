@@ -1,0 +1,62 @@
+/* ##### DASHBOARD CONTAINER FOR CONTENT ##### */
+.index-container {
+    /* border: solid 1px; */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 95vh;
+}
+.index-header {
+    /* border: solid 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    /* height: 100px; */
+}
+.index-card-container {
+    /* border: solid 1px; */
+    margin-top: 10px;
+    max-width: 1200px;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 24px;
+}
+.index-card {
+    background-color: var(--card-bgc);
+    box-shadow: var(--box-shadow-bgc);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 150px;
+    position: relative;
+}
+.index-card:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color-white);
+    cursor: pointer;
+}
+.index-card span {
+    /* border: solid 1px; */
+    font-size: 2rem;
+    font-weight: bold;
+}
+.index-card > p {
+    /* border: solid 1px; */
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: auto;
+    margin-bottom: 12px;
+    position: absolute;
+    bottom: 1px;
+    text-align: center;
+    width: 100%;
+}

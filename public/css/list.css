@@ -1,0 +1,400 @@
+.company-header {
+    /* border: solid 1px blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--text-color-black);
+}
+/* ##### ADD BUTTON ##### */
+.add-btn button {
+    background-color: var(--add-btn-bg-color);
+    color: var(--text-color-white);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.add-btn button:hover {
+    background-color: var(--add-btn-hover-color);
+    color: var(--text-color-white);
+}
+.session-container {
+    background-color: #DDF4E7;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    max-width: 900px;
+    width: 100%;
+    top: 20px;
+    left: 29%;
+    transition: opacity 0.5s ease;
+}
+.status-alert {
+    font-size: 1.5rem;
+}
+.notif {
+    /* border: solid 1px; */
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notif h1 {
+    font-size: 3rem;
+    color: #918d8d;
+}
+
+/* ##### TABLE CONTAINER #####*/
+.table-container table {
+    background-color: var(--details-view-bg-color);
+    box-shadow: var(--box-shadow-bgc);
+    table-layout: fixed;
+    border-radius: 20px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 8px;
+}
+table thead tr .company-name {
+    width: 20%;
+}
+table thead th {
+    background-color: var(--sidebar-color);
+    color: var(--text-color-white);
+    font-weight: 600;
+    text-align: center;
+}
+thead th:first-child {
+    border-top-left-radius: 20px;
+}
+thead th:last-child {
+    border-top-right-radius: 20px;
+}
+table tbody tr td {
+    text-align: center;
+    border-top: solid 1px #ccc;
+}
+table thead tr th, table tbody tr td {
+    padding: 12px;
+}
+table thead tr .date {
+    width: 12%;
+}
+tbody tr:hover {
+    background-color: var(--table-hover-color);
+    color: var(--text-color-white);
+    cursor: pointer;
+}
+tbody tr:last-child:hover td:first-child {
+    border-bottom-left-radius: 20px;
+}
+tbody tr:last-child:hover td:last-child {
+border-bottom-right-radius: 20px;
+}
+td .action-btn {
+    /* border: solid 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.action-btn form {
+    width: 100%;
+}
+.action-btn button {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+}
+.action-btn .apply {
+    color: var(--text-color-white);
+    background-color: #124170;
+    font-size: 1rem;
+    width: 100%;
+}
+.action-btn .apply:hover {
+    background-color: #DDF4E7;
+    color: #3396D3;
+}
+.action-btn .del {
+    background-color: #8A0000;
+    color: var(--text-color-white);
+    font-size: 1rem;
+}
+.action-btn .del:hover {
+    background-color: #E62727;
+    color: #9A3F3F;
+}
+
+/* ########## FORM MODAL CONTAINER ########## */
+.form-container {
+    background-color: var(--modal-bgc);
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.form-content {
+    background-color: var(--sidebar-color);
+    box-shadow: var(--box-shadow-bgc);
+    padding: 12px;
+    max-width:600px;
+    width: 100%;
+    border-radius: 12px;
+    height: 90vh;
+}
+.form-content form {
+    display: flex;
+    flex-direction: column;
+    height: 78vh;
+}
+form .form-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    margin-top: 12px;
+}
+form .form-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+.form-card {
+    display: flex;
+    flex-direction: column;
+}
+.form-card label, 
+.form-job-description label,
+.form-links label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color-white);
+}
+.form-card input, 
+select {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: solid 1px gray;
+}
+.form-job-description, .form-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin-top: 12px;
+}
+.form-job-description textarea {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    height: 120px;
+    resize: vertical;
+    border: solid 1px gray;
+}
+.form-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+.form-btn button {
+    background-color: orangered;
+    color: var(--text-color-white);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-close-btn {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    padding: 8px;
+}
+
+/* ########## RESPONSE PAGE ########## */
+.btn-action {
+    /* border: solid 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.btn-action a {
+    text-decoration: none;
+    color: var(--text-color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+.btn-action a i {
+    font-size: 1.2rem;
+    width: 50px;
+    padding: 4px;
+}
+.btn-action a:hover {
+    background-color: #3396D3;
+    color: var(--text-color-black);
+}
+.pen {
+    background-color: #E4004B;
+    border-radius: 8px;
+    width: 40%;
+}
+.eye {
+    background-color: #075B5E;
+    border-radius: 8px;
+    width: 40%;
+}
+
+/* ########## SEARCH CONTAINER ########## */
+.search-container {
+    border-bottom: solid 1px #ccc;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+.search-content {
+    width: 50%;
+}
+.search-select-content, .add-btn {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.search-content input {
+    width: 50%;
+    height: 6vh;
+    border: solid 1px var(--border-color);
+    border-radius: 8px;
+    padding: 12px;
+}
+.search-select-content select {
+    width: 50%;
+    height: 6vh;
+    border: solid 1px var(--border-color);
+    border-radius: 8px;
+}
+.search-content button {
+    width: 10%;
+    height: 5vh;
+    border-radius: 8px;
+    border: none;
+    background-color: #1B3C53;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color-white);
+}
+.search-container button:hover {
+    color: #D2C1B6;
+}
+
+/* ########## CONDITION ######### */
+.reject {
+    background-color: #E62727;
+    color: var(--text-color-white);
+    /* font-weight: 600; */
+}
+.interview {
+    background: #0A400C;
+    color: var(--text-color-white);
+    /* font-weight: 600; */
+}
+.pending {
+    background-color: #FFCC00;
+    /* font-weight: 600; */
+    color: var(--text-color-white);
+}
+.job_offer {
+    background-color: #EB5B00;
+    color: var(--text-color-white);
+}
+.viewed {
+    background-color: #7C444F;
+    color: var(--text-color-white);
+}
+
+tbody tr.reject:last-child td:first-child,
+tbody tr.interview:last-child td:first-child,
+tbody tr.pending:last-child td:first-child,
+tbody tr.job_offer:last-child td:first-child,
+tbody tr.viewed:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+tbody tr.reject:last-child td:last-child,
+tbody tr.interview:last-child td:last-child,
+tbody tr.pending:last-child td:last-child, 
+tbody tr.job_offer:last-child td:last-child,
+tbody tr.viewed:last-child td:last-child 
+{
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ########## PAGINATION CONTAINER ########## */
+.custom-pagination {
+    /* border: solid 1px; */
+    list-style: none;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 78%;
+    bottom: 12px;
+    
+}
+
+.custom-pagination li {
+    background-color: #541212;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.custom-pagination li a {
+    text-decoration: none;
+    color: var(--text-color-white);
+    display: block;
+}
+
+.custom-pagination li.active {
+    background: #F97A00;
+    color: white;
+    font-weight: bold;
+    border: solid 1px black;
+}
+
+.custom-pagination li.disabled {
+    color: #aaa;
+    border-color: #eee;
+    cursor: not-allowed;
+}

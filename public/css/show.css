@@ -1,0 +1,105 @@
+.info-container {
+    display: flex;
+    justify-content: center;
+}
+
+.info-content {
+    background-color: var(--body-color);
+    box-shadow: 5px 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    height: 90vh;
+    max-width: 800px;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    gap: 16px;
+}
+
+.info-details {
+    width: 50%;
+    line-height: 2;
+    font-size: 1.2rem;
+}
+
+.info-details p {
+    border-bottom: solid 1px;
+    border-color: #bbb8b8;
+}
+
+.info-job-description {
+    height: 30vh;
+    line-height: 2;
+    padding: 12px;
+}
+
+.info-job-description p {
+    border-bottom: solid 1px;
+    border-color: #ccc;
+}
+
+.info-job-description-content {
+    padding: 0 0 0 16px;
+}
+
+.form-header {
+    display: flex;
+    padding: 12px;
+}
+
+.form-header .header {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px;
+    ;
+    border-color: #ccc;
+}
+
+.header h3 {
+    padding: 12px;
+}
+
+.form-close-btn {
+    padding: 12px;
+    width: 50%;
+    border-bottom: solid 1px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    border-color: #ccc;
+}
+
+.form-close-btn a {
+    color: var(--text-color-black);
+}
+
+/* ########## CONDITION ######### */
+.info-details p .reject {
+    color: #8A0000;
+    font-weight: 600;
+}
+
+.info-details .interview {
+    /* background-color: #0A400C; */
+    color: #0A400C;
+    font-weight: 600;
+}
+
+.info-details .pending {
+    color: #FFC107;
+    font-weight: 600;
+}
+
+.info-details .viewed {
+    color: #ED3500;
+    font-weight: 600;
+}
+
+.info-details .jobOffer {
+    color: #EB5B00;
+    font-weight: 600;
+}

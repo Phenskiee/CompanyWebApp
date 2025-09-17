@@ -1,0 +1,51 @@
+/* ########## COLOR ########## */
+:root {
+    /* Off White Color */
+    --white-smoke: #f5f5f5;
+    --ivory: #fffff0;
+    --linen: #faf0e6;
+    --seashell: #fff5ee;
+    --snow: #fffafa;
+    --ghost-white: #f8f8ff;
+    --gainsboro: #dcdcdc;
+    --beige: #f5f5dc;
+
+    /* Black */
+    --black100: #oaqe15;
+    --black90: #212631;
+    --black80: #373f4e;
+    --black70: #4e576a;
+    --black60: #667085;
+
+    /* Tranfarent */
+    --sidebar-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ########## CENTERING DIV ########## */
+/* USING FLEX BOX */
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+/* BOTH DIRECTION */
+.parent {
+  position: relative;
+  height: 300px;
+}
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* USING GRID */
+.parent {
+  display: grid;
+  place-items: center; /* centers both horizontally and vertically */
+  height: 300px;
+}

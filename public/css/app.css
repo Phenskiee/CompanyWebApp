@@ -1,0 +1,199 @@
+:root {
+    --body-color: #FFFCFB;
+    --sidebar-color: #1E1E1E;
+    --main-body-color: #f5f5f5;
+    /* --sidebar-text-color: white; */
+    
+    --add-btn-bg-color: #0D5EA6;
+    --add-btn-hover-color: #3396D3;
+    
+    --card-bgc: #FFFCFB;
+    --active-color: #8E1616;
+    --hover-color: #ad4949;
+    --table-hover-color: #205781;
+    --details-btn-bgc: #FF4F0F;
+    --border-color: #819A91;
+
+    --modal-bgc: rgba(0, 0, 0, 0.3);
+    --box-shadow-bgc: 8px 5px 20px rgba(0, 0, 0, 0.3);
+
+    --text-color-gray: #819A91;
+    --text-color-white: #FFFCFB;
+    --text-color-black: #000000;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--main-body-color);
+    display: flex;
+    gap: 5px;
+}
+
+/* ##### HEADER ##### */
+.side-container {
+    background-color: var(--sidebar-color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    width: 20%;
+    height: 100vh;
+    border-radius: 0 12px 12px 0;
+}
+.title-container{
+    color: var(--text-color-white);
+    margin: 12px 0 20px 0;
+    text-align: center;
+}
+.title-container h1 {
+    font-size: 1.3rem;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 16px 0 0 0;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}
+.image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 2px var(--text-color-white);
+}
+.label-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8px;
+    width: inherit;
+    color: var(--text-color-white);
+}
+.label-container .name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+.label-container .applicant {
+    font-size: 0.9rem;
+    color: var(--text-color-gray);
+    margin-top: 4px;
+}
+.details-btn {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0 0 0;
+}
+.details-btn button {
+    padding: 8px 16px;
+    background-color: var(--details-btn-bgc);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+nav  {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    height: 50vh;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    list-style: none;
+    gap: px;
+    width: 100%;
+    margin-top: 28px;
+}
+nav ul .links {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+}
+.links a {
+    color: var(--text-color-white);
+    text-decoration: none;
+    padding: 8px;
+    font-weight: 600;
+}
+.links:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+    border-radius: 8px;
+}
+.links:hover a {
+    color: white;
+}
+.links.active {
+    background-color: var(--active-color);
+}
+
+/* ########## Details CONTAINER ##########*/
+.details-container {
+    background-color: var(--modal-bgc);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+}
+.details-content {
+    background-color: var(--sidebar-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    height: auto;
+    border-radius: 12px;
+
+}
+.details-container .view-content {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 16px;
+    color: var(--text-color-white);
+    border-bottom: solid 1px var(--border-color);
+}
+.view-close-btn {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--text-color-white);
+    margin-bottom: 16px;
+    padding: 16px;
+}
+.view-close-btn i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* MAIN CONTAINER */
+main {
+    width: 80%;
+    padding: 12px;
+    height: 100vh;
+    margin-left: 20%;
+}
