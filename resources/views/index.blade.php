@@ -9,7 +9,7 @@
 @section('content')
     <div class="index-container">
         <div class="index-header">
-            <h1>CAMPANY MANAGEMENT SYSTEMS</h1>
+            <h1>CAMPANY MANAGEMENT SYSTEM</h1>
         </div>
         <div class="index-card-container">
             <div class="index-card">
